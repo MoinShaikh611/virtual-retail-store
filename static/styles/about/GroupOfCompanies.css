@@ -1,0 +1,108 @@
+.GroupOfCompanies-Wrapper {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  z-index: -1;
+  background: #20232a;
+}
+.GroupOfCompanies-Title {
+  position: absolute;
+  top: 50%;
+  left: 5vw;
+  width: 12vw;
+  color: white;
+  text-transform: uppercase;
+}
+.GroupOfCompanies-Brand-Wrapper {
+  position: absolute;
+  height: 100%;
+  width: 70vw;
+  top: 10vh;
+  right: 0;
+  background: #f5f6f8;
+}
+.GroupOfCompanies-Brand-Wrapper {
+  z-index: 10;
+}
+
+.GroupOfCompanies-Brand-Container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.GroupOfCompanies-Brand-Item1,
+.GroupOfCompanies-Brand-Item2 {
+  border-bottom: 1.5px dashed rgba(0, 0, 0, 0.12);
+}
+
+.GroupOfCompanies-Brand-Item1,
+.GroupOfCompanies-Brand-Item2,
+.GroupOfCompanies-Brand-Item3 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 5em;
+}
+
+.GroupOfCompanies-Brand-Item-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.GroupOfCompanies-Brand-Item-Brand-Content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.GroupOfCompanies-Brand-Item-Brand-Content a {
+  background: #a872ee;
+  padding: 1em 2em;
+  border-radius: 6px;
+  width: 10em;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .GroupOfCompanies-Title {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    font-size: 1.5em;
+  }
+  .GroupOfCompanies-Brand-Item1,
+  .GroupOfCompanies-Brand-Item2,
+  .GroupOfCompanies-Brand-Item3 {
+    padding: 0;
+  }
+  .GroupOfCompanies-Brand-Wrapper {
+    width: 80%;
+    top: 20%;
+    left: 50%;
+    height: 210%;
+    transform: translate(-50%);
+  }
+  .GroupOfCompanies-Brand-Item-Container {
+    flex-direction: column;
+    gap: 0em;
+    padding: 2em 0px;
+  }
+  .GroupOfCompanies-Brand-Item-Brand-Content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+  }
+}

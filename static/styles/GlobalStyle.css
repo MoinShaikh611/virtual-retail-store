@@ -1,0 +1,53 @@
+@font-face {
+  font-family: TitiliumBlack;
+  src: url(../fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+button:focus {
+  outline: 0;
+}
+
+h1 {
+  font-family: TitiliumBlack;
+  line-height: 0.9;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.HomeWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1em;
+  }
+}

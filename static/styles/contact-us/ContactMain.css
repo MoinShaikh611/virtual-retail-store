@@ -1,0 +1,9 @@
+.Contact__Wrapper {
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .Contact__Wrapper {
+    margin-top: 5rem;
+  }
+}

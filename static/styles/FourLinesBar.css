@@ -1,0 +1,25 @@
+.four-bar-lines-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.line-1 {
+  width: 100%;
+  height: 20px;
+  background: #f5f6f8;
+}
+.line-2 {
+  width: 100%;
+  height: 15px;
+  background: #f5f6f8;
+}
+.line-3 {
+  width: 100%;
+  height: 10px;
+  background: #f5f6f8;
+}
+.line-4 {
+  width: 100%;
+  height: 5px;
+  background: #f5f6f8;
+}

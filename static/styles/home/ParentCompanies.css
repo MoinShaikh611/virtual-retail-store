@@ -1,0 +1,72 @@
+@font-face {
+  font-family: TitiliumBlack;
+  src: url(../../fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+  font-family: TitiliumRegular;
+  src: url(../../fonts/TitiliumWeb/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url(../../fonts/Nexa/Nexa-Light.otf);
+}
+.ParentCompanies__Wrapper {
+  padding: 2em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ParentCompanies__Content__Container {
+  font-family: Nexa;
+  font-size: 22px;
+}
+
+.ParentCompanies__Container {
+  display: flex;
+  margin: 2em 0;
+}
+.parentCompany-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+.parentCompany-header-seq-no h1 {
+  color: #20232a;
+  opacity: 0.07;
+}
+.ParentCompany {
+  border: 1.5px solid rgba(32, 35, 42, 0.1);
+  padding: 3em 1em;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.parentCompany-para,
+.parentCompany-link {
+  text-align: center;
+}
+
+.parentCompany-link button {
+  cursor: pointer;
+  padding: 1em 2em;
+  background: #a872ee;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+  font-family: Nexa;
+}
+.parentCompany-para {
+  margin-bottom: 2em;
+  font-family: TitiliumRegular;
+}
+
+@media screen and (max-width: 767px) {
+  .ParentCompanies__Container {
+    flex-direction: column;
+  }
+}

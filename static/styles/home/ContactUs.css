@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Nexa;
+  src: url(../../fonts/Nexa/Nexa-Light.otf);
+}
+
+.ContactUs__Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2em 5em;
+}
+
+.ContactUs__Container {
+  display: flex;
+  padding: 2em 0;
+  align-items: center;
+}
+.ContactUs__Col1 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.ContactUs__Col1 p {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 145%;
+  letter-spacing: 0.005em;
+  text-transform: lowercase;
+  color: #20232a;
+  opacity: 0.99;
+}
+.ContactUs__Col2 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-first-row,
+.contact-second-row {
+  display: flex;
+  gap: 5em;
+}
+.contact-third-row {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  font-family: Nexa;
+}
+
+.contact-name-col,
+.contact-email-col,
+.contact-brand-col,
+.contact-phone-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+.contact-third-row {
+  width: 100%;
+}
+
+.contact-third-row textarea {
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+  padding: 12px 0;
+  height: 48px;
+  border-bottom: 1px solid #000000;
+  background: none;
+  border-radius: 0;
+  transition: all 0.15s ease;
+  resize: vertical;
+}
+
+.ContactUs__Col2 form {
+  gap: 3em;
+  display: flex;
+  flex-direction: column;
+  font-family: Nexa;
+}
+
+.send-btn-container {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.5em 0;
+  background: #20232a;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .ContactUs__Container {
+    flex-direction: column-reverse;
+  }
+  .contact-first-row,
+  .contact-second-row {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .ContactUs__Col2 form {
+    gap: 2em;
+  }
+  .ContactUs__Col1,
+  .ContactUs__Col2 {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .ContactUs__Wrapper {
+    padding: 2em 2em;
+  }
+}

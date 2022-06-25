@@ -1,0 +1,55 @@
+.IndustryFeature-Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f5f6f8;
+  padding: 3em 5em;
+  margin-bottom: 1em;
+}
+
+.IndustryFeature-List {
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.IndustryFeature-bullet-circle {
+  background: #c5f4e3;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IndustryFeature-list-item {
+  flex: 0 0 25%;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 1em;
+  color: #241d1d;
+  text-transform: capitalize;
+}
+
+.IndustryFeature-Title {
+  padding: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .IndustryFeature-Title h1 {
+    font-size: 1.5em;
+  }
+  .IndustryFeature-Wrapper {
+    padding: 2em;
+  }
+  .IndustryFeature-List {
+    flex-direction: column;
+    margin: 0;
+  }
+  .IndustryFeature-list-item {
+    margin: 0.5em;
+  }
+}

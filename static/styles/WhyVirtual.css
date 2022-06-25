@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Nexa;
+    src: url(../fonts/Nexa/Nexa-Bold.otf);
+}
+
+@font-face {
+    font-family: TitiliumLight;
+    src: url(../fonts/TitiliumWeb/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+    font-family: TitiliumSemiBold;
+    src: url(../fonts/TitiliumWeb/TitilliumWeb-SemiBold.ttf);
+}
+
+.why-go-virtual-wrapper{
+    display: flex;
+    padding: 2rem;
+}
+.virtual-content{
+    flex: 1;
+}
+.virtual-growth-rate{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    flex: 1;
+}
+
+.x4,.x3,.percent-17{
+    position: relative;
+}
+
+.x4 h6{
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Nexa;
+}
+
+.x3 h6{
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Nexa;
+}
+
+.percent-17 h6{
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Nexa;
+}
+
+.x4 .higher-text,.x3 .higher-text,
+.percent-17 .higher-text{
+    font-family: TitiliumLight;
+}
+.x4 .conversation-rate,.x3 .conversation-rate,
+.percent-17 .conversation-rate{
+    font-family:  TitiliumSemiBold;
+}
+
+
+
+@media only screen and (max-width:767px) {
+    .why-go-virtual-wrapper{
+        flex-direction: column;
+    }
+    .why-go-virtual-wrapper .virtual-content p {
+        display: none;
+    }
+    .virtual-growth-rate{
+        margin-top: 1rem;
+    }
+}

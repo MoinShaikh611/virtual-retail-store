@@ -1,0 +1,37 @@
+.Tags-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 5em;
+  gap: 1em;
+}
+
+.Tags-Col1,
+.Tags-Col2 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.tag-btns {
+  padding: 1em 2em;
+  background: #ab72f1;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .Tags-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+    gap: 1em;
+  }
+  .tag-btns {
+    padding: 0.5em;
+  }
+}

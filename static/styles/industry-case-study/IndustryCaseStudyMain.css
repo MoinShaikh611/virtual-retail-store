@@ -1,0 +1,25 @@
+@font-face {
+  font-family: TitiliumBlack;
+  src: url(../fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+  font-family: TitiliumBlack;
+  src: url(../../fonts/Nexa/Nexa-Light.otf);
+}
+
+@font-face {
+  font-family: TitiliumWeb-Light;
+  src: url(../../fonts/TitiliumWeb/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+  font-family: Nexa-Light;
+  src: url(../../fonts/Nexa/Nexa-Light.otf);
+}
+
+.IndustryCaseStudy__Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

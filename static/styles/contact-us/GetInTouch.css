@@ -1,0 +1,93 @@
+.GetInTouch-Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #20232a;
+  display: flex;
+  color: white;
+}
+.GetInTouch-Withus-Row1 {
+  text-transform: uppercase;
+}
+.GetInTouch-Withus-Row2 {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+.GetInTouch-Withus-Container {
+  border-right: 1.25px solid rgba(255, 255, 255, 0.25);
+  padding: 20em 10em;
+  flex: 1;
+}
+
+.GetInTouch-Address-Wrapper {
+  padding: 7em 5em;
+  border-bottom: 1.25px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.GetInTouch-Timing-Wrapper {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.GetInTouch-Address-Container {
+  border-right: 1.25px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.GetInTouch-Address-Row2 {
+  max-width: 200px;
+  line-height: 1.7;
+}
+
+.GetInTouch-Contact-Container {
+  display: flex;
+  align-items: flex-start;
+  padding: 7em 3em;
+  flex: 1;
+}
+
+.GetInTouch-Contact-Content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.GetInTouch-Contact-Para {
+  line-height: 1.7;
+}
+.GetInTouch-Timing-Row2 {
+  line-height: 1.5;
+}
+
+.GetInTouch-Withus-Row1 h1 {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1000px) {
+  .GetInTouch-Wrapper {
+    flex-direction: column;
+  }
+  .GetInTouch-Withus-Container {
+    padding: 4em 2em;
+    border: none;
+  }
+  .GetInTouch-Address-Container {
+    border-right: none;
+    border-bottom: 1.25px solid rgba(255, 255, 255, 0.25);
+  }
+  .GetInTouch-Address-Wrapper {
+    padding: 4em 2em;
+  }
+  .GetInTouch-Timing-Wrapper {
+    padding: 4em 2em;
+  }
+  .GetInTouch-Contact-Container {
+    padding: 4em 2em;
+  }
+}

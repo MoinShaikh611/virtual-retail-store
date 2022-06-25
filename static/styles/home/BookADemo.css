@@ -1,0 +1,72 @@
+.BookADemo__Wrapper {
+  background: #f5f6f8;
+}
+.BookADemo__ImageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BookADemo__Content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.BookADemo__Btn {
+  margin-top: 3em;
+  padding: 2em 3em;
+  text-align: center;
+  background-color: #a872ee;
+}
+
+.BookADemo__Btn h1 {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.BookADemo__Btn__Hover h1 {
+  text-align: center;
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.BookADemo__Content-col2:hover .BookADemo__Btn__Hover h1 {
+  transform: translateY(-165%);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.BookADemo__Content-col2:hover .BookADemo__Btn h1 {
+  opacity: 0;
+  transform: translateY(-5%);
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .BookADemo__Wrapper {
+    padding: 2em;
+  }
+  .BookADemo__Content-col1 {
+    text-transform: uppercase;
+  }
+  .BookADemo__Btn {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .BookADemo__Wrapper {
+    padding: 2em;
+  }
+  .BookADemo__Content {
+    flex-direction: column;
+    display: flex;
+    justify-content: normal;
+    align-items: inherit;
+    justify-content: center;
+    margin-top: 2em;
+  }
+}

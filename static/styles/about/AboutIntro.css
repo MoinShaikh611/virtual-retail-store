@@ -1,0 +1,32 @@
+.AboutIntro-Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.AboutIntro-Container {
+  padding: 5em;
+}
+.AboutIntro-Image {
+  padding: 3em 0;
+}
+.AboutIntro-Container h1 {
+  text-transform: uppercase;
+  max-width: 400px;
+}
+.AboutIntro-Container p {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 767px) {
+  .AboutIntro-Container h1 {
+    font-size: 1.5em;
+  }
+  .AboutIntro-Container {
+    padding: 2em;
+  }
+}

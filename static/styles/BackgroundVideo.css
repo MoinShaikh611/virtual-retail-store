@@ -1,0 +1,145 @@
+@font-face {
+    font-family: NexaLight;
+    src: url(../fonts/Nexa/Nexa-Light.otf);
+}
+
+@font-face {
+    font-family: TitiliumLight;
+    src: url(../fonts/TitiliumWeb/TitilliumWeb-Light.ttf);
+}
+
+.background__video__wrapper{
+    z-index: 1;
+    background: aliceblue;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background__video__wrapper video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.background__video__wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    width: 100vw;
+}
+
+.background__video__overlay__content{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 0 10rem;
+}
+.background__video__overlay__content h1{
+    text-align: center;
+    margin-top: auto;
+    text-transform: uppercase;
+    font-size:3rem;
+    font-weight:900;
+}
+
+.background__video__overlay__content .overlay__links{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    font-family: NexaLight;
+}
+.background__video__overlay__content .overlay__links a{
+    padding: 1em 2rem;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.background__video__overlay__content .overlay__links a:before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    bottom:-100%;
+    background: #A872EE;
+    transition: all .5s;
+    z-index: -1;
+    right: 0;
+}
+
+
+.background__video__overlay__content .overlay__links a:hover:before{			
+    bottom: 0;
+}
+
+.background__video__overlay__content .overlay__links a:hover{
+    color: #ffffff;
+}
+
+
+
+.background__video__overlay__content .overlay__meta-globe-mobile{
+    margin-top: 1rem;
+}
+
+.overlay__trusted-top-content{
+    position: relative;
+    display: inline;
+    width: 100%;
+    align-items: center;
+    margin-top: auto;
+    font-family: TitiliumLight;
+}
+
+.overlay__trusted-brands-section{
+    margin-top: .6rem;
+    margin-bottom: 5rem;
+}
+
+
+.overlay__trusted-top-content p{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay__trusted-top-content span{
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    width: 20%;
+}
+
+@media only screen and (max-width:767px) {
+    .background__video__overlay__content{
+        padding: 0 2rem;
+    }
+    .background__video__overlay__content .overlay__links a{
+        padding: 0.5rem 1rem;
+        font-size: .8em;
+    }   
+}
+
+@media only screen and (max-width:900px) {
+    .overlay__trusted-top-content span{
+        display: none;
+    }
+    .background__video__overlay__content h1{
+        font-size:1.5rem;
+    }
+}

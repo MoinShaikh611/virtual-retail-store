@@ -1,0 +1,119 @@
+@font-face {
+  font-family: TitiliumBlack;
+  src: url(../../fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+  font-family: TitiliumRegular;
+  src: url(../../fonts/TitiliumWeb/TitilliumWeb-Regular.ttf);
+}
+
+.TestimonialCarousel__Wrapper {
+  background-color: #20232b;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5em;
+}
+
+.carousel__tabs__wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px 5px 5px 0px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-family: TitiliumRegular;
+  text-transform: uppercase;
+  font-size: 12px;
+  overflow: hidden;
+  margin: 0rem 3rem;
+}
+
+.brand__testimonial__tab {
+  position: relative;
+  padding-right: 1rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  user-select: none;
+  color: rgb(224, 224, 224, 0.4);
+}
+
+.brand__testimonial__tab.active {
+  color: #ffffff;
+}
+.brand__testimonial__tab::before {
+  transform: translateX(-100%);
+  position: absolute;
+  bottom: -1.2em;
+  left: -6.7em;
+  content: "";
+  height: 0.25em;
+  width: 200%;
+  background: #a872ee;
+}
+
+.brand__testimonial__tab.active::before {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 0.5s ease;
+}
+
+.user__testimonial__tab {
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  color: rgb(224, 224, 224, 0.4);
+}
+.user__testimonial__tab.active {
+  color: #ffffff;
+}
+
+.user__testimonial__tab::before {
+  transform: translateX(100%);
+  opacity: 0;
+  position: absolute;
+  bottom: 0.1em;
+  left: 0.4em;
+  content: "";
+  height: 0.3em;
+  width: 170%;
+  background: #a872ee;
+}
+
+.user__testimonial__tab.active::before {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 0.5s ease;
+}
+
+.Testimonial__Carousel__BackgroundImage {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #20232b;
+}
+
+.Testimonial__Carousel__BackgroundImage::before {
+  content: "";
+  position: absolute;
+  top: -130px;
+  left: 0%;
+  background: #20232b;
+  width: 100%;
+  height: 260px;
+  transform: skewY(5deg);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel__tabs__wrapper {
+    margin: auto;
+  }
+}

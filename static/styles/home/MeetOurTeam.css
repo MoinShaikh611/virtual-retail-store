@@ -1,0 +1,206 @@
+.MeetOurTeam__Wrapper {
+  position: relative;
+  margin-bottom: 10em 0;
+}
+
+.MeetOurTeam__Bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.MeetOurTeam_50vh_Bg {
+  background-color: #f5f6f8;
+  height: 50vh;
+}
+.MeetOurTeam__FourLinesBar {
+  width: 100%;
+}
+
+.MeetOurTeam__Header {
+  padding: 3em 5em;
+}
+
+.MeetOurTeam__Header h1 {
+  text-transform: uppercase;
+}
+
+.MeetOurTeam__Slides__Container {
+  display: flex;
+  gap: 2em;
+  height: 400px;
+  overflow: hidden;
+  justify-content: center;
+  position: relative;
+  max-width: 1024px;
+  margin: 2em auto 15em auto;
+}
+
+.MeetOurTeam__Slides {
+  position: relative;
+  width: 100%;
+}
+
+.MeetOurTeam__Slide {
+  transform: translateY(100%);
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.MeetOurTeam__Slide.meet-show {
+  transform: translateY(0%);
+  transition: all 1s ease;
+}
+
+.MeetOurTeam__Slide.meet-next {
+  transform: translateY(100%);
+  transition: all 1s ease;
+}
+
+.MeetOurTeam__Slide.meet-previous {
+  transform: translateY(-100%);
+  transition: all 1s ease;
+}
+
+.MeetOurTeam-carousel-buttons {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  display: flex;
+  gap: 2em;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 200px;
+}
+
+.MeetOurTeam-carousel-left-btn {
+  cursor: pointer;
+  background: transparent;
+  transform: rotate(0deg);
+  border: 1.35px solid #20232a;
+  border-radius: 50%;
+}
+
+.MeetOurTeam-carousel-left-btn svg {
+  width: 100px;
+}
+
+.MeetOurTeam-carousel-right-btn {
+  cursor: pointer;
+  background: transparent;
+  transform: rotate(180deg);
+  border: 1.35px solid #20232a;
+  border-radius: 50%;
+}
+
+.MeetOurTeam-carousel-right-btn svg {
+  width: 100px;
+}
+
+.MeetOurTeam-carousel-left-btn:hover {
+  transition: all 0.5s ease;
+  background: #20232a;
+}
+
+.MeetOurTeam-carousel-left-btn:hover svg#Layer_1 {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(134deg)
+    brightness(110%) contrast(105%);
+}
+
+.MeetOurTeam-carousel-right-btn:hover {
+  transition: all 0.5s ease;
+  background: #20232a;
+}
+
+.MeetOurTeam-carousel-right-btn:hover svg#Layer_1 {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(134deg)
+    brightness(110%) contrast(105%);
+}
+
+.MeetOurTeam__Names__And__Designation__Container {
+  position: absolute;
+  bottom: -19%;
+  left: 49%;
+  gap: 2em;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  height: 12%;
+  width: 100%;
+  max-width: 1005px;
+  overflow: hidden;
+}
+
+.MeetOurTeam__Names__Slides__Container,
+.MeetOurTeam__Designation__Slides__Container {
+  display: flex;
+  overflow: hidden;
+}
+
+.MeetOurTeam__Names__Slides,
+.MeetOurTeam__Designation__Slides {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  height: 20px;
+}
+
+.MeetOurTeam__Names__Slide {
+  transform: translateY(100%);
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  flex: 1;
+}
+
+.MeetOurTeam__Designation__Slide {
+  opacity: 0;
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex: 1;
+}
+
+.MeetOurTeam__Names__Slide.meet-name-show {
+  transform: translateY(0%);
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+.MeetOurTeam__Names__Slide.meet-name-next {
+  transform: translateY(100%);
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.MeetOurTeam__Names__Slide.meet-name-previous {
+  transform: translateY(-100%);
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.MeetOurTeam__Designation__Slide.meet-desig-show {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.MeetOurTeam__Designation__Slide.meet-desig-next {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.MeetOurTeam__Designation__Slide.meet-desig-previous {
+  opacity: 0;
+  transition: all 1s ease;
+}

@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Nexa;
+  src: url(../../fonts/Nexa/Nexa-Light.otf);
+}
+
+:root {
+  --header-background: #20232a;
+  --header-color: #ffffff;
+}
+
+.header__wrapper {
+  z-index: 10;
+  background-color: transparent;
+  height: 5rem;
+  padding: 4rem 8rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--header-background);
+  color: var(--header-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: Nexa;
+  border-bottom: 1.25px solid rgba(255, 255, 255, 0.25);
+}
+
+.header__logo {
+  flex: 1;
+}
+
+.header__nav {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem;
+}
+
+.header__nav li a {
+  color: white;
+}
+.header__nav__mobile li a {
+  color: white;
+}
+
+.header__pricingBtn {
+  display: block;
+  padding: 0.5rem 2rem;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Nexa;
+}
+
+.header__MenuIcon {
+  display: none;
+}
+
+.header__sideBar {
+  display: none;
+}
+.no-scroll {
+  overflow-y: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .header__wrapper {
+    padding: 2rem 3rem;
+  }
+  .header__pricingBtn {
+    display: none;
+  }
+  .header__MenuIcon {
+    display: block;
+    cursor: pointer;
+  }
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav__mobile li {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .header__sideBar {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 99.9vh;
+    background: var(--header-background);
+    right: 0;
+    padding: 6rem 2rem;
+    width: 50%;
+    transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in; /* Firefox 4 */
+    -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
+    -o-transition: all 1s ease-in; /* Opera */
+  }
+  .header__nav__close {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+  .header__nav__close img {
+    filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(262deg)
+      brightness(106%) contrast(104%);
+  }
+
+  .header__sideBar.open {
+    display: block;
+    background: rgba(0, 0, 0, 0.9);
+  }
+}

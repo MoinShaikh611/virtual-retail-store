@@ -1,0 +1,9 @@
+.Blog__Wrapper {
+  position: relative;
+  margin-top: 8em;
+}
+@media screen and (max-width: 767px) {
+  .Blog__Wrapper {
+    margin-top: 5rem;
+  }
+}

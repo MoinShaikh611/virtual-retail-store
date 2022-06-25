@@ -1,0 +1,51 @@
+@font-face {
+    font-family: TitiliumBlack; 
+    src: url(../fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+.firstLine,
+.secondLine {
+  border-bottom: 1.53302px solid #000000;
+  width: 100%;
+  opacity: 0.2;
+}
+.AsSeenOn__Wrapper {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.AsSeenOnText {
+  width: 50%;
+  text-align: center;
+  font-family: TitiliumBlack; 
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150%;
+  line-height: 120.6%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.AsSeenOn__Showcase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F6F8;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .AsSeenOnText{
+        font-size:100%;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1200px){
+    .AsSeenOnText{
+        font-size:150%;
+        width: 30%;
+    }
+}

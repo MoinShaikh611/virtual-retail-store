@@ -1,0 +1,14 @@
+.About__Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 8em;
+}
+
+.header__wrapper {
+  background-color: white !important;
+  color: black !important;
+}
+.header__nav li a {
+  color: black !important;
+}
